@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222222;
+}
+
+.stopwatch-container {
+    width: 90%;
+    max-width: 550px;
+    padding: 40px;
+    text-align: center;
+    background: #f5f7fb;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    color: #222222;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+.display {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+    font-family: monospace;
+    color: #222222;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+#startBtn {
+    background: #22c55e;
+    color: white;
+}
+
+#pauseBtn {
+    background: #f59e0b;
+    color: white;
+}
+
+#resetBtn {
+    background: #ef4444;
+    color: white;
+}
+
+#lapBtn {
+    background: #3b82f6;
+    color: white;
+}
+
+.laps-container {
+    margin-top: 35px;
+}
+
+.laps-container h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #222222;
+}
+
+#lapsList {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#lapsList li {
+    padding: 10px;
+    margin: 6px 0;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 500px) {
+
+    .stopwatch-container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .display {
+        font-size: 32px;
+    }
+
+    button {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
